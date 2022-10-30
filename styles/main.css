@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-grey: #3D546F;
+    --header-menu-1-background: #293449;
+    --basic-greylight: #C5C5C5;
+    --basic-background: #F1F5F7;
+    --basic-black: rgb(8, 8, 8);
+    --white: #FFFFFF;
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBCE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --success: #5FBB2D;
+    --warning: #FFBF47;
+    --error: #BA2732;
+    --light-grey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
+    --background: #C4C4C4;
+    --box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    --font-family: 'Cuprum', sans-serif;
+}
+
+.body {
+    margin: 0 auto;
+    background: var(--basic-background);
+    color: var(--basic-black);
+}
+
+.body a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    /*padding: 0 calc(50% - 471px);*/
+}
+
+.header > div {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.header > div > nav:nth-child(1),
+.header > div > nav:nth-child(2),
+.header > div > nav:nth-child(3) {
+    padding: 0 calc(50% - 471px);
+    align-items: center;
+}
+
+/* first menu's style */
+
+.header > div > nav:nth-child(1) {
+    display: flex;
+    flex-flow: row;
+    gap: 200px;
+    height: 47px;
+    background: var(--header-menu-1-background);
+    border-bottom: 4px solid var(--basic-background);
+}
+
+.header > div > nav:nth-child(1) > div {
+    display: flex;
+    flex-flow: row;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) {
+    float: left;
+    align-items: center;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) > a {
+    border: 1px solid var(--basic-red);
+    background: var(--basic-red);
+    background-image: url(../photos/logo-technomart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 220px;
+    height: 47px;
+    border-bottom: 6px solid #BA2732;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) > a:hover {
+    opacity: 0.9;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) > a:active {
+    background: var(--error);
+    background-image: url(../photos/logo-technomart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) > div {
+    background-image: url(../photos/icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) > div > input {
+    border: hidden;
+    height: 25px;
+    position: relative;
+    left: 30px;
+    top: 0px;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(1) > div > input:hover {
+    background: red;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(2) {
+    float: right;
+}
+
+.header > div > nav:nth-child(1) > div:nth-child(2) > div {
+    display: flex;
+    flex-flow: row;
+}
+
+/* second menu's style */
+
+.header > div > nav:nth-child(2) {
+    display: flex;
+    flex-flow: row;
+    overflow-x: auto;
+}
+
+.body::-webkit-scrollbar {
+    background: #1C1C28;
+}
+
+.body::-webkit-scrollbar-button {
+    background: #818181;
+}
+
+.body::-webkit-scrollbar-button:active {
+    background: #6966FF;
+}
+
+.body::-webkit-scrollbar-thumb {
+    background: #818181;
+}
+
+.body::-webkit-scrollbar-thumb:active {
+    background: #6966FF;
+}
+
+.header > div > nav:nth-child(2)::-webkit-scrollbar {
+    background: #1C1C28;
+}
+.header > div > nav:nth-child(2)::-webkit-scrollbar-button {
+    background: #818181;
+}
+
+.header > div > nav:nth-child(2)::-webkit-scrollbar-button:active {
+    background: #6966FF;
+}
+
+.header > div > nav::nth-child(2)::-webkit-scrollbar-thumb {
+    background: #818181;
+}
+
+.header > div > nav::nth-child(2)::-webkit-scrollbar-thumb:active {
+    background: #6966FF;
+    background: #6966FF;
+}
+
+.header > div > nav:nth-child(2) > div {
+    display: flex;
+    flex-flow: row;
+}
+
+.header > div > nav:nth-child(2) > div:nth-child(1) {
+    width: 37%;
+}
+
+.header > div > nav:nth-child(2) > div:nth-child(1) > p {
+    padding: 0 calc(50% - 200px);
+}
+
+.header > div > nav:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    flex-flow: column;
+    width: 49%;
+}
+
+.header > div > nav:nth-child(2) > div:nth-child(3) {
+    width: 11%;
+}
+
+/* third menu's style */
+
+.header > div > nav:nth-child(3) {
+    display: flex;
+    flex-flow: row;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.header > div > nav:nth-child(3) > div {
+    gap: 40px;
+}
+
