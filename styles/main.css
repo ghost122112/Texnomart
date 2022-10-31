@@ -412,6 +412,7 @@
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    overflow-x: auto;
 }
 
 .header > div > nav:nth-child(3) > a {
@@ -437,20 +438,30 @@
     color: rgb(185, 167, 167);
 }
 
+/* footer */
+
 .footer {
     display: flex;
-    background: var(--footer-background-color-1);
     min-height: 300px;
 }
 
-.footer > div {
+footer > div {
+    width: 100%;
+    background: grey;
+    display: flex;
+    flex-flow: column;
+}
+
+.footer > div > div {
     padding: 0 calc(50% - 471px);
 }
 
 .footer > div > div:nth-child(1) {
-
+    background: var(--footer-background-color-1);
+    min-height: 192px;
 }
 
 .footer > div > div:nth-child(2) {
     background: var(--footer-background-color-2);
+    min-height: 107px;
 }
