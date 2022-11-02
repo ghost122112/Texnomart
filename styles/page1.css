@@ -1,0 +1,6 @@
+.main {
+    min-height: 100px;
+    background: var(--basic-black);
+    display: flex;
+    flex-flow: column;
+}
