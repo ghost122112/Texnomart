@@ -1,5 +1,5 @@
 .main {
-    min-height: 100px;
+    min-height: 200px;
     background: var(--basic-black);
     display: flex;
     flex-flow: column;
