@@ -45,6 +45,7 @@
     --box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
     --font-family: 'Cuprum', sans-serif;
     --header-links-back-color-on-active: #161D29;
+    --header--background: #B7BFC8;
     --footer-background-color-1: #32425C;
     --footer-background-color-2: #293449;
 }
@@ -65,7 +66,7 @@
 
 .header {
     display: flex;
-    /*padding: 0 calc(50% - 471px);*/
+    /* background: var(--header--background); */
 }
 
 .header > div {
@@ -145,6 +146,7 @@
 
 .header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:hover {
     background-image: url(../photos/icon-search-active.svg);
+    transition: 0.5s ease;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:focus {
@@ -211,6 +213,7 @@
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a:hover,
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover {
     background-color: var(--header-links-back-color-on-active);
+    transition: 0.5s ease;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a:hover {
@@ -426,6 +429,7 @@
 
 .header > div > nav:nth-child(3) > a:hover {
     background: #293449;
+    transition: 0.5s ease;
 }
 
 .header > div > nav:nth-child(3) > a:active {
@@ -433,30 +437,235 @@
     color: rgb(185, 167, 167);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 
-.footer {
+.footer 
+{
     display: flex;
     min-height: 300px;
 }
 
-footer > div {
+footer > div 
+{
     width: 100%;
     background: grey;
     display: flex;
     flex-flow: column;
 }
 
-.footer > div > div {
+.footer > div > div 
+{
+    display: flex;
+    flex-flow: column;
     padding: 0 calc(50% - 471px);
 }
 
-.footer > div > div:nth-child(1) {
+.footer > div > div:nth-child(1) 
+{
     background: var(--footer-background-color-1);
     min-height: 192px;
 }
 
-.footer > div > div:nth-child(2) {
+.footer > div > div:nth-child(1) > div:nth-child(1)
+{
+    display: block;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
+{
+    display: flex;
+    float: left;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a
+{
+    min-width: 220px;
+    height: 64px;
+    background: var(--basic-red);
+    border-bottom: 6px solid #BA2732;
+    background-image: url(../photos/logo-technomart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 63%; 
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
+{
+    display: flex;
+    float: right;
+    min-height: 68px;
+    gap: 58px;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a
+{
+    margin-top: 37px;
+    color: var(--basic-background);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:hover
+{
+    transition: 0.3s linear;
+    text-decoration-line: underline;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a:active
+{
+    filter: opacity(0.5);
+    text-decoration-line: none;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2)
+{
+    min-height: 122px;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
+{
+    display: flex;
+    float: left;
+    min-height: 122px;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
+{
+    display: flex;
+    float: right;
+    min-height: 122px;
+    gap: 58px;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p
+{
+    color: var(--basic-background);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    padding: 0 calc(50% - 300px);
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a
+{
+    margin-top: 25px;
+    color: var(--special-yellowlight);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:hover
+{
+    text-decoration-line: underline;
+    transition: 0.3s linear;
+}
+
+.footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a:active
+{
+    text-decoration-line: none;
+    filter: opacity(0.5);
+}
+
+.footer > div > div:nth-child(2)
+{
     background: var(--footer-background-color-2);
     min-height: 107px;
+    display: flex;
+    flex-flow: row;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(1)
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(1) > p
+{
+    margin-bottom: 44px;
+    color: var(--basic-background);
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(2)
+{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(1)
+{
+    background: #212A3A;
+    min-width: 44px;
+    min-height: 44px;
+    border: 1px solid #212A3A;
+    border-radius: 50%;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(2)
+{
+    
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(3)
+{
+    
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(3)
+{
+    float: right;
 }
