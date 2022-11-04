@@ -1,6 +1,134 @@
 .main {
-    min-height: 200px;
-    background: var(--basic-black);
+    min-height: 2592px;
     display: flex;
     flex-flow: column;
 }
+
+.main > div
+{
+    display: flex;
+    padding: 0 calc(50% - 471px);
+}
+
+.main > div > div
+{
+    display: grid;
+    grid-template-areas: 'first second third'
+                         'fourth fourth fifth'
+                         'fourth fourth sixth';
+    gap: 21px;
+    position: relative;
+    left: 0px;
+    top: 119px;
+}
+
+.main > div > div > div
+{
+    min-width: 300px;
+    min-height: 123px;
+    background: grey;
+    display: flex;
+    flex-flow: row;
+}
+
+.main > div > div > div > div:nth-child(1)
+{
+    display: flex;
+    flex-flow: column;
+    padding: 0 calc(50% - 127px);
+    width: 47%;
+}
+
+.main > div > div > div > div:nth-child(1) > p
+{
+    color: var(--basic-background);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    position: relative;
+    left: -3px;
+    top: -3px;
+}
+
+.main > div > div > div > div:nth-child(1) > a
+{
+    display: flex;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    min-width: 135px;
+    min-height: 38px;
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+    position: relative;
+    color: var(--basic-black);
+    left: -2px;
+    top: -14px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-rendering: optimizeSpeed;
+}
+
+.main > div > div > div > div:nth-child(2)
+{
+    display: flex;
+    width: 40%;
+}
+
+.main > div > div > div:hover
+{
+    filter: opacity(0.9);
+    transition: 0.3s linear;
+}
+
+.main > div > div > div:nth-child(1)
+{
+    grid-area: first;
+    background: #FFBF47;
+    background-image: url(../photos/Каталог\ new.svg);
+    background-repeat: no-repeat;
+    background-position: 230px 0px;
+}
+
+.main > div > div > div:nth-child(1) > div:nth-child(2)
+
+.main > div > div > div:nth-child(2)
+{
+    grid-area: second;
+    background: #3BBCE3;
+}
+
+.main > div > div > div:nth-child(3)
+{
+    grid-area: third;
+    background: #DC91D8;
+}
+
+.main > div > div > div:nth-child(4)
+{
+    grid-area: fourth;
+    min-width: 620px;
+    min-height: 266px;
+}
+
+.main > div > div > div:nth-child(5)
+{
+    grid-area: fifth;
+    background: #8ED78F;
+}
+
+.main > div > div > div:nth-child(6)
+{
+    grid-area: sixth;
+    background: #FFC047;
+}
+
+
+
+
+
+

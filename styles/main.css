@@ -437,54 +437,6 @@
     color: rgb(185, 167, 167);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* footer */
 
 .footer 
@@ -627,15 +579,19 @@ footer > div
 
 .footer > div > div:nth-child(2) > div:nth-child(1)
 {
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     display: flex;
+    width: 33%;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(1) > p
 {
-    margin-bottom: 44px;
+    /* margin-bottom: 13px; */
     color: var(--basic-background);
+    position: relative;
+    left: 0;
+    top: 0px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(2)
@@ -644,28 +600,83 @@ footer > div
     flex-flow: row;
     justify-content: center;
     align-items: center;
+    width: 31%;
 }
 
-.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(1)
+
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(1),
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(2),
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(3)
 {
     background: #212A3A;
     min-width: 44px;
     min-height: 44px;
     border: 1px solid #212A3A;
     border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:hover
+{
+    background: var(--basic-red);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--basic-red);
+    transition: 0.3s linear;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(1)
+{
+    background-image: url(../photos/icon-vk.svg);
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(2)
 {
-    
+    background-image: url(../photos/icon-fb.svg);
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(3)
 {
-    
+    background-image: url(../photos/icon-insta.svg);
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(3)
 {
     float: right;
+    width: 36%;
+    display: flex;
+    flex-flow: row;
 }
+
+.footer > div > div:nth-child(2) > div:nth-child(3) > div
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(3) > div p
+{
+    color: var(--basic-background);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    position: relative;
+    left: 39px;
+    top: 19px;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(3) > div a
+{
+    color: var(--special-yellowlight);
+}
+
+
+
+
+
+
+
+
+
+
