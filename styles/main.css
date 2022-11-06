@@ -489,6 +489,11 @@ footer > div
     background-size: 63%; 
 }
 
+.footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:hover
+{
+    filter: opacity(0.7);
+}
+
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
 {
     display: flex;
