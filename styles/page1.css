@@ -58,6 +58,7 @@
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    color: black;
     min-width: 135px;
     min-height: 38px;
     background: white;
@@ -207,7 +208,7 @@
 .slide-wrapper
 {  
     width: calc(620px * 2);
-    animation: slide 10s ease infinite;
+    animation: slide 10s ease-in-out infinite;
     margin-left: -182px;
 }
 
@@ -371,16 +372,6 @@
     background-image: url(../photos/Perforator4.svg);
     background-position: 41px 28px;
 }
-
-
-
-
-
-
-
-
-
-
 
 .main > div > div:nth-child(3)
 {
