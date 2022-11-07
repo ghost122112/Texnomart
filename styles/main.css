@@ -679,7 +679,17 @@ footer > div
 
 
 
-
+@media screen and (max-width: 800px)
+{
+    html
+    {
+        transform: scale(0.3);
+        position: absolute;
+        left: -309px;
+        top: -1103px;
+        margin: 0 auto;
+    }
+}
 
 
 
