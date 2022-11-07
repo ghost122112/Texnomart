@@ -683,10 +683,10 @@ footer > div
 {
     html
     {
-        transform: scale(0.32);
+        transform: scale(0.38);
         position: absolute;
-        left: -309px;
-        top: -1072px;
+        left: -268px;
+        top: -978px;
         margin: 0 auto;
     }
 }
