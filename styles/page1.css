@@ -92,16 +92,39 @@
     background-position: 230px 0px;
 }
 
+.main > div > div > div > div
+{
+    background-repeat: no-repeat;
+}
+
+.main > div > div > div:nth-child(1) > div:nth-child(2)
+{
+    background-image: url(../photos/Object1.svg);
+    background-position: 31px 31px;
+}
+
 .main > div > div > div:nth-child(2)
 {
     grid-area: second;
     background: #3BBCE3;
 }
 
+.main > div > div > div:nth-child(2) > div:nth-child(2)
+{
+    background-image: url(../photos/icon-2.svg);
+    background-position: 12px 34px;
+}
+
 .main > div > div > div:nth-child(3)
 {
     grid-area: third;
     background: #DC91D8;
+}
+
+.main > div > div > div:nth-child(3) > div:nth-child(2)
+{
+    background-image: url(../photos/icon-3.svg);
+    background-position: 7px 31px;
 }
 
 .main > div > div > div:nth-child(4)
@@ -117,10 +140,22 @@
     background: #8ED78F;
 }
 
+.main > div > div > div:nth-child(5) > div:nth-child(2)
+{
+    background-image: url(../photos/icon-4.svg);
+    background-position: 13px 25px;
+}
+
 .main > div > div > div:nth-child(6)
 {
     grid-area: sixth;
     background: #FFC047;
+}
+
+.main > div > div > div:nth-child(6) > div:nth-child(2)
+{
+    background-image: url(../photos/icon-5.svg);
+    background-position: 8px 31px;
 }
 
 .slider
