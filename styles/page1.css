@@ -123,13 +123,6 @@
     background: #FFC047;
 }
 
-
-
-
-
-
-
-/* Styling the area of the slides */
 #slideshow {
     overflow: hidden;
     height: 266px;
@@ -137,49 +130,31 @@
     margin: 0 auto;
 }
  
-/* Style each of the sides
-with a fixed width and height */
 .slide {
     float: left;
     height: 266px;
     width: 620px;
 }
  
-/* Add animation to the slides */
-.slide-wrapper {
-   
-    /* Calculate the total width on the
-    basis of number of slides */
-   
-width: calc(620px * 2);
- 
-    /* Specify the animation with the
-    duration and speed */
-   
+.slide-wrapper {  
+    width: calc(620px * 2);
     animation: slide 10s ease infinite;
     margin-left: -182px;
 }
- 
-/* Set the background color
-  of each of the slides */
+
 .slide:nth-child(1) {
     background-image: url(../photos/Перфораторы.svg);
 }
- 
+
 .slide:nth-child(2) {
     background-image: url(../photos/Дрели.svg);
 }
-   
-  /* Define the animation
-  for the slideshow */
+
 @keyframes slide {
-     
-  /* Calculate the margin-left for
-    each of the slides */
     20% {
         margin-left: -182px;
     }
-   
+    
     70% {
         margin-left: calc(-805px * 1);
     }
