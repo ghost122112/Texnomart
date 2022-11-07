@@ -76,13 +76,13 @@
     display: flex;
     width: 40%;
 }
-
+/*
 .main > div > div > div:hover
 {
     filter: opacity(0.9);
     transition: 0.3s linear;
 }
-
+*/
 .main > div > div > div:nth-child(1)
 {
     grid-area: first;
@@ -123,7 +123,7 @@
     background: #FFC047;
 }
 
-#slideshow 
+.slider
 {
     overflow: hidden;
     height: 266px;
@@ -140,27 +140,52 @@
 
 .slide > a
 {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 23px;
+    top: 198px;
+    max-width: 192px;
+    min-height: 38px;
+    border: 1px solid var(--basic-red);
+    border-radius: 1px;
+    background: var(--basic-red);
+    color: var(--basic-white);
+    text-transform: uppercase;
 }
 
-.slide-wrapper 
+.slide > a:hover
+{
+    background: #CA2C37;
+    border: 1px solid #CA2C37;
+    transition: 0.3s ease;
+}
+
+.slide > a:active
+{
+    background: #BA2732;
+    border: 1px solid #BA2732;
+}
+
+.slide-wrapper
 {  
     width: calc(620px * 2);
     animation: slide 10s ease infinite;
     margin-left: -182px;
 }
 
-.slide:nth-child(1) 
+.slide:nth-child(1)
 {
     background-image: url(../photos/Перфораторы.svg);
 }
 
-.slide:nth-child(2) 
+.slide:nth-child(2)
 {
     background-image: url(../photos/Дрели.svg);
 }
 
-@keyframes slide 
+@keyframes slide
 {
     20% {
         margin-left: -182px;
