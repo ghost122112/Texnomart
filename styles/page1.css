@@ -7,10 +7,11 @@
 .main > div
 {
     display: flex;
+    flex-flow: column;
     padding: 0 calc(50% - 471px);
 }
 
-.main > div > div
+.main > div > div:nth-child(1)
 {
     display: grid;
     grid-template-areas: 'first second third'
@@ -22,7 +23,7 @@
     top: 119px;
 }
 
-.main > div > div > div
+.main > div > div:nth-child(1) > div
 {
     min-width: 300px;
     min-height: 123px;
@@ -31,7 +32,7 @@
     flex-flow: row;
 }
 
-.main > div > div > div > div:nth-child(1)
+.main > div > div:nth-child(1) > div > div:nth-child(1)
 {
     display: flex;
     flex-flow: column;
@@ -39,7 +40,7 @@
     width: 47%;
 }
 
-.main > div > div > div > div:nth-child(1) > p
+.main > div > div:nth-child(1) > div > div:nth-child(1) > p
 {
     color: var(--basic-background);
     font-weight: 700;
@@ -50,7 +51,7 @@
     top: -3px;
 }
 
-.main > div > div > div > div:nth-child(1) > a
+.main > div > div:nth-child(1) > div > div:nth-child(1) > a
 {
     display: flex;
     font-weight: 400;
@@ -71,7 +72,7 @@
     align-items: center;
 }
 
-.main > div > div > div > div:nth-child(2)
+.main > div > div:nth-child(1) > div > div:nth-child(2)
 {
     display: flex;
     width: 40%;
@@ -83,7 +84,7 @@
     transition: 0.3s linear;
 }
 */
-.main > div > div > div:nth-child(1)
+.main > div > div:nth-child(1) > div:nth-child(1)
 {
     grid-area: first;
     background: #FFBF47;
@@ -92,67 +93,67 @@
     background-position: 230px 0px;
 }
 
-.main > div > div > div > div
+.main > div > div:nth-child(1) > div > div
 {
     background-repeat: no-repeat;
 }
 
-.main > div > div > div:nth-child(1) > div:nth-child(2)
+.main > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
 {
     background-image: url(../photos/Object1.svg);
     background-position: 31px 31px;
 }
 
-.main > div > div > div:nth-child(2)
+.main > div > div:nth-child(1) > div:nth-child(2)
 {
     grid-area: second;
     background: #3BBCE3;
 }
 
-.main > div > div > div:nth-child(2) > div:nth-child(2)
+.main > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
 {
     background-image: url(../photos/icon-2.svg);
     background-position: 12px 34px;
 }
 
-.main > div > div > div:nth-child(3)
+.main > div > div:nth-child(1) > div:nth-child(3)
 {
     grid-area: third;
     background: #DC91D8;
 }
 
-.main > div > div > div:nth-child(3) > div:nth-child(2)
+.main > div > div:nth-child(1) > div:nth-child(3) > div:nth-child(2)
 {
     background-image: url(../photos/icon-3.svg);
     background-position: 7px 31px;
 }
 
-.main > div > div > div:nth-child(4)
+.main > div > div:nth-child(1) > div:nth-child(4)
 {
     grid-area: fourth;
     min-width: 620px;
     min-height: 266px;
 }
 
-.main > div > div > div:nth-child(5)
+.main > div > div:nth-child(1) > div:nth-child(5)
 {
     grid-area: fifth;
     background: #8ED78F;
 }
 
-.main > div > div > div:nth-child(5) > div:nth-child(2)
+.main > div > div:nth-child(1) > div:nth-child(5) > div:nth-child(2)
 {
     background-image: url(../photos/icon-4.svg);
     background-position: 13px 25px;
 }
 
-.main > div > div > div:nth-child(6)
+.main > div > div:nth-child(1) > div:nth-child(6)
 {
     grid-area: sixth;
     background: #FFC047;
 }
 
-.main > div > div > div:nth-child(6) > div:nth-child(2)
+.main > div > div:nth-child(1) > div:nth-child(6) > div:nth-child(2)
 {
     background-image: url(../photos/icon-5.svg);
     background-position: 8px 31px;
@@ -230,6 +231,225 @@
         margin-left: calc(-805px * 1);
     }
 }
+
+.main > div > div:nth-child(2)
+{
+    display: flex;
+    flex-flow: column;
+    margin-top: 177px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(1)
+{
+    display: flex;
+    flex-flow: row;
+    background-color: #F9F5F0;
+    min-height: 89px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(1) > label
+{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
+    gap: 439px;
+    position: relative;
+    left: 0;
+    top: -1px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #32425C;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(1) > label > div
+{
+    min-height: 38px;
+    min-width: 192px;
+    border: none;
+    background: var(--basic-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2)
+{
+    display: flex;
+    flex-flow: row;
+    margin-top: 19px;
+    gap: 18px;
+    overflow-x: auto;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div
+{
+    background: var(--basic-white);
+    background-image: url(../photos/Каталог\ new.svg);
+    background-repeat: no-repeat;
+    background-position: 150px 0px;
+    border: 1px solid #EAEAEA;
+    min-width: 220px;
+    min-height: 318px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:hover
+{
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+    transition: all 0.6s ease;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1)
+{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1):hover
+{
+    display: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2)
+{
+    display: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+    background-image: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator1.svg);
+    background-position: 19px 5px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)
+{
+    background-image: url(../photos/Каталог\ new.svg);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator2.svg);
+    background-position: 40px 29px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3)
+{
+    background-image: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator3.svg);
+    background-position: 32px 21px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4)
+{
+    background-image: url(../photos/Каталог\ new.svg);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator4.svg);
+    background-position: 41px 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main > div > div:nth-child(3)
+{
+    display: flex;
+    flex-flow: column;
+    margin-top: 408px;
+}
+
+.main > div > div:nth-child(3) > div:nth-child(1)
+{
+    display: flex;
+    flex-flow: row;
+    background-color: #F9F5F0;
+    min-height: 89px;
+}
+
+.main > div > div:nth-child(3) > div:nth-child(1) > label
+{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
+    gap: 332px;
+    position: relative;
+    left: 0;
+    top: -1px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #32425C;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
+
+.main > div > div:nth-child(3) > div:nth-child(1) > label > div
+{
+    min-height: 38px;
+    min-width: 192px;
+    border: none;
+    background: var(--basic-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
