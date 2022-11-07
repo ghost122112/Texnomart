@@ -224,11 +224,11 @@
 
 @keyframes slide
 {
-    20% {
+    10% {
         margin-left: -182px;
     }
 
-    70% {
+    50% {
         margin-left: calc(-805px * 1);
     }
 }
