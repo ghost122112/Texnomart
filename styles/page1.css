@@ -394,11 +394,6 @@
     filter: opacity(0.5);
 }
 
-.main > div > div:nth-child(2) > div:nth-child(2) > div:hover div:nth-child(3)
-{
-    background: var(--basic-red);
-}
-
 .main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1)
 {
     background-repeat: no-repeat;
