@@ -233,6 +233,27 @@
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main > div > div:nth-child(2)
 {
     display: flex;
@@ -306,6 +327,151 @@
     min-height: 318px;
 }
 
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1)
+{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2)
+{
+    display: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+    background-image: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div
+{
+    width: 100%;
+    height: 50%;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator1.svg);
+    background-position: 19px 5px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)
+{
+    background-image: url(../photos/Каталог\ new.svg);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator2.svg);
+    background-position: 40px 29px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3)
+{
+    background-image: none;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator3.svg);
+    background-position: 32px 21px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4)
+{
+    background-image: url(../photos/Каталог\ new.svg);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1)
+{
+    background-image: url(../photos/Perforator4.svg);
+    background-position: 41px 28px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3)
+{
+    background: var(--basic-white);
+    color: var(--basic-black);
+    width: 100%;
+    height: 44%;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > p
+{
+    font-family: 'PT Sans', sans-serif;
+    font-style: normal;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > p:nth-child(1)
+{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 calc(50% - 82px);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > p:nth-child(2)
+{
+    color: #A9A9A9;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    left: 0;
+    top: -16px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div
+{
+    background: var(--basic-red);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1px 0;
+    width: 121px;
+    height: 38px;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: -20px;
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div::after
+{
+    content: "";
+    width: 0; 
+    height: 0;
+    position: absolute;
+    left: 100%;
+    border-width: 20px 0 20px 20px;
+    border-style: solid;
+    border-color: transparent var(--basic-red);
+}
+
+.main > div > div:nth-child(2) > div:nth-child(2) > div:hover > div:nth-child(3) > div
+{
+    background: var(--basic-red);
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1px 0;
+    width: 121px;
+    height: 38px;
+    align-items: center;
+    position: relative;
+    left: 0;
+    top: -20px;
+}
+
 .main > div > div:nth-child(2) > div:nth-child(2) > div:hover
 {
     filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
@@ -325,23 +491,22 @@
     align-items: center;
     gap: 15px;
     width: 100%;
-    height: 50%;
+    height: 50%; /*attention!*/
 }
 
 .main > div > div:nth-child(2) > div:nth-child(2) > div:hover div:nth-child(3)
 {
-    display: flex;
-    flex-flow: column;
-    color: black;
-    z-index: 100;
     width: 100%;
-    height: 50%;
+    height: 44%; /*44%*/
+    overflow: hidden;
 }
 
 .main > div > div:nth-child(2) > div:nth-child(2) > div:hover div:nth-child(2) > button:nth-child(1)::before
 {
     content: url(../photos/icon-cart.svg);
-    background-position: 0px 0px;
+    position: relative;
+    left: -6px;
+    top: 1px;
 }
 
 .main > div > div:nth-child(2) > div:nth-child(2) > div:hover div:nth-child(2) > button
@@ -404,67 +569,6 @@
     filter: opacity(0.5);
 }
 
-.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1)
-{
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 50%;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1):hover
-{
-    display: none;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2)
-{
-    display: none;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
-{
-    background-image: none;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)
-{
-    background-image: url(../photos/Perforator1.svg);
-    background-position: 19px 5px;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2)
-{
-    background-image: url(../photos/Каталог\ new.svg);
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1)
-{
-    background-image: url(../photos/Perforator2.svg);
-    background-position: 40px 29px;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3)
-{
-    background-image: none;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1)
-{
-    background-image: url(../photos/Perforator3.svg);
-    background-position: 32px 21px;
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4)
-{
-    background-image: url(../photos/Каталог\ new.svg);
-}
-
-.main > div > div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(1)
-{
-    background-image: url(../photos/Perforator4.svg);
-    background-position: 41px 28px;
-}
-
 .main > div > div:nth-child(3)
 {
     display: flex;
@@ -502,6 +606,7 @@
 
 .main > div > div:nth-child(3) > div:nth-child(1) > label > div
 {
+    display: flex;
     min-height: 38px;
     min-width: 192px;
     border: none;
