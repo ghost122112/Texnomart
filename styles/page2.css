@@ -1,0 +1,7 @@
+.main
+{
+    margin: 0 auto;
+    font-style: normal;
+    display: flex;
+    flex-flow: column;
+}
