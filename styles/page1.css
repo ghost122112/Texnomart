@@ -617,8 +617,14 @@
 
 .main > div > div:nth-child(3) > div:nth-child(2) > a:hover
 {
-    filter: opacity(0.7);
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
     transition: all 0.3s linear;
+}
+
+.main > div > div:nth-child(3) > div:nth-child(2) > a:active
+{
+    filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15))
+            opacity(0.5);
 }
 
 .main > div > div:nth-child(3) > div:nth-child(2) > a:nth-child(1) > div { background-image: url(../photos/Bosch.svg); }
