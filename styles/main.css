@@ -279,28 +279,7 @@
 
 /* second menu's style */
 
-/*
-.header > div > nav:nth-child(2)::-webkit-scrollbar {
-    background: #1C1C28;
-}
 
-.header > div > nav:nth-child(2)::-webkit-scrollbar-button {
-    background: #818181;
-}
-
-.header > div > nav:nth-child(2)::-webkit-scrollbar-button:active {
-    background: #6966FF;
-}
-
-.header > div > nav::nth-child(2)::-webkit-scrollbar-thumb {
-    background: #818181;
-}
-
-.header > div > nav::nth-child(2)::-webkit-scrollbar-thumb:active {
-    background: #6966FF;
-    background: #6966FF;
-}
-*/
 
 .header > div > nav:nth-child(2) 
 {
