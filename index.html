@@ -201,24 +201,47 @@
                         </p>
                     </div>
                     <div class="main__wrapper--section-3--content">
-                        <div class="main__wrapper--section-3--content--choose-block">
-                            <div class="main__wrapper--section-3--content--choose-block--list-of-btns">
-                                <button class="main__wrapper--section-3--content--choose-block--list-of-btns-1" type="button" title="Доставка">Доставка</button>
-                                <button class="main__wrapper--section-3--content--choose-block--list-of-btns-2" type="button" title="Гарантия">Гарантия</button>
-                                <button class="main__wrapper--section-3--content--choose-block--list-of-btns-3" type="button" title="Кредит">Кредит</button>
-                            </div>
+                        <div class="main__wrapper--section-3--content--tab">
+                            <button class="main__wrapper--section-3--content--tab--tablinks" onclick="openCity(event, 'block_1')">Доставка</button>
+                            <button class="main__wrapper--section-3--content--tab--tablinks" onclick="openCity(event, 'block_2')">Гарантия</button>
+                            <button class="main__wrapper--section-3--content--tab--tablinks" onclick="openCity(event, 'block_3')">Кредит</button>
                         </div>
-                        <div class="main__wrapper--section-3--content--display-block">
-                            <div class="main__wrapper--section-3--content--display-block-descriptions">
-                                <h3 class="main__wrapper--section-3--content--display-block--h3">Доставка</h3>
-                                <p class="main__wrapper--section-3--content--display-block--p">
-                                    Мы с удовольствием доставим ваш товар прямо 
-                                    к вашему подъезду совершенно бесплатно!
-                                    Ведь мы неплохо заработаем, 
-                                    поднимая его на ваш этаж!
-                                </p>
+                        <div class="main__wrapper--section-3--content--table">
+                            <div id="block_1" class="main__wrapper--section-3--content-table--tabcontent">
+                                <div class="main__wrapper--section-3--content-table--display-block-descriptions">
+                                    <h3 class="main__wrapper--section-3--content-table--display-block--h3">Доставка</h3>
+                                    <p class="main__wrapper--section-3--content-table--display-block--p">
+                                        Мы с удовольствием доставим ваш товар прямо 
+                                        к вашему подъезду совершенно бесплатно!
+                                        Ведь мы неплохо заработаем, 
+                                        поднимая его на ваш этаж!
+                                    </p>
+                                </div>
+                                <div class="main__wrapper--section-3--content-table--display-block--illustration"></div>
                             </div>
-                            <div class="main__wrapper--section-3--content--display-block--illustration"></div>
+                            <div id="block_2" class="main__wrapper--section-3--content-table--tabcontent">
+                                <div class="main__wrapper--section-3--content-table--display-block-descriptions">
+                                    <h3 class="main__wrapper--section-3--content-table--display-block--h3">Гарантия</h3>
+                                    <p class="main__wrapper--section-3--content-table--display-block--p">
+                                        Если купленный у нас товар поломается или заискрит, 
+                                        а также в случае пожара, спровоцированного его возгоранием, 
+                                        вы всегда можете быть уверены в нашей гарантии. 
+                                        Мы обменяем сгоревший товар на новый. 
+                                        Дом уж восстановите как-нибудь сами.
+                                    </p>
+                                </div>
+                                <div class="main__wrapper--section-3--content-table--display-block--illustration"></div>
+                            </div>
+                            <div id="block_3" class="main__wrapper--section-3--content-table--tabcontent">
+                                <div class="main__wrapper--section-3--content-table--display-block-descriptions">
+                                    <h3 class="main__wrapper--section-3--content-table--display-block--h3">Кредит</h3>
+                                    <p class="main__wrapper--section-3--content-table--display-block--p">
+                                        Залезть в долговую яму стало проще! 
+                                        Кредитные консультанты придут вам на помощь.
+                                    </p>
+                                </div>
+                                <div class="main__wrapper--section-3--content-table--display-block--illustration"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
