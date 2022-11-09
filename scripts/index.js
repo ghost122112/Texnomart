@@ -12,6 +12,6 @@ function openCity(evt, blockOrder) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    document.getElementById(blockOrder).style.display = "block";
+    document.getElementById(blockOrder).style.display = "flex";
     evt.currentTarget.className += " active";
 }

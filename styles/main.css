@@ -518,7 +518,8 @@ footer > div
 
 .footer > div > div:nth-child(1) > div:nth-child(1)
 {
-    display: block;
+    display: flex;
+    gap: 173px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
@@ -550,6 +551,7 @@ footer > div
     float: right;
     min-height: 68px;
     gap: 58px;
+    overflow-x: auto;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a
@@ -575,7 +577,9 @@ footer > div
 
 .footer > div > div:nth-child(1) > div:nth-child(2)
 {
+    display: flex;
     min-height: 122px;
+    gap: 89px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
@@ -590,7 +594,8 @@ footer > div
     display: flex;
     float: right;
     min-height: 122px;
-    gap: 58px;
+    gap: 57px;
+    overflow-x: auto;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p
