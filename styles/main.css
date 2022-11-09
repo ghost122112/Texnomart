@@ -711,15 +711,25 @@ footer > div
     color: var(--special-yellowlight);
 }
 
+.footer > div > div:nth-child(2) > div:nth-child(3) > div a:hover
+{
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(3) > div a:active
+{
+    filter: opacity(0.5);
+}
 
 @media screen and (max-width: 1040px)
 {
     .footer > div > div:nth-child(1) > div:nth-child(1)
     {
-        padding: 0 calc(50% - 300px);
+        padding:  0 calc(50% - 440px);
     }
     .footer > div > div:nth-child(1) > div:nth-child(2)
     {
-        padding: 0 calc(50% - 300px);
+        padding: 0 calc(50% - 440px);
     }
 }
