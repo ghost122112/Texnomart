@@ -52,7 +52,7 @@
 .body
 {
     margin: 0 auto;
-    background: var(--basic-background);
+    background: var(--basic-white);
     color: var(--basic-black);
     font-family: 'Cuprum', sans-serif;
     font-style: normal;
@@ -68,7 +68,8 @@
 .header
 {
     display: flex;
-    background: rgba(0, 0, 0, 0.0001);
+    background: rgba(0, 0, 0, 0.04);
+    min-height: 320px;
 }
 
 .header > div
@@ -395,7 +396,7 @@
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    gap: 1px;
+    gap: 6px;
     position: relative;
     left: 0;
     top: -13px;
@@ -412,6 +413,7 @@
     position: relative;
     left: 4px;
     top: 0px;
+    background: white;
 }
 
 .header > div > nav:nth-child(2) > div:nth-child(3) > a:nth-child(1) 
@@ -465,7 +467,7 @@
 {
     background: #32425C;
     border-bottom: 5px solid #293449;
-    width: 100%;
+    padding: 0px 31px;
     text-align: center;
     color: white;
     height: 55px;
@@ -742,22 +744,3 @@ footer > div
         margin: 0 auto;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
