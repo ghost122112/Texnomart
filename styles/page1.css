@@ -725,9 +725,13 @@
 {
     min-width: 10px;
     min-height: 279px;
-    background-image: ;
+    background-image: url(../photos/Layer\ 118\ copy.svg);
     background-repeat: no-repeat;
     background-position: 0px 0px;
+    position: relative;
+    left: -14px;
+    top: 0px;
+    z-index: 100;
 }
 
 .main__wrapper--section-3--content--tab button
