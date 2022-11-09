@@ -437,7 +437,6 @@
 {
     display: flex;
     flex-flow: row;
-    justify-content: center;
     align-items: center;
     overflow-x: auto;
 }
@@ -721,5 +720,6 @@ footer > div
         left: -268px;
         top: -978px;
         margin: 0 auto;
+        float: left;
     }
 }
