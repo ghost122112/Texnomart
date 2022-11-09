@@ -711,15 +711,15 @@ footer > div
     color: var(--special-yellowlight);
 }
 
-@media screen and (max-width: 800px)
+
+@media screen and (max-width: 1040px)
 {
-    html
+    .footer > div > div:nth-child(1) > div:nth-child(1)
     {
-        transform: scale(0.38);
-        position: absolute;
-        left: -268px;
-        top: -978px;
-        margin: 0 auto;
-        float: left;
+        padding: 0 calc(50% - 300px);
+    }
+    .footer > div > div:nth-child(1) > div:nth-child(2)
+    {
+        padding: 0 calc(50% - 300px);
     }
 }
