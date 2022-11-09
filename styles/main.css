@@ -68,7 +68,7 @@
 .header
 {
     display: flex;
-    /* background: var(--header--background); */
+    background: rgba(0, 0, 0, 0.0001);
 }
 
 .header > div
@@ -142,6 +142,7 @@
 
 .header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text] 
 {
+    all: unset;
     width: 267px;
     height: 42px;
     box-sizing: border-box;
@@ -156,24 +157,24 @@
     background-repeat: no-repeat;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:hover 
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:hover
 {
     background-image: url(../photos/icon-search-active.svg);
     transition: 0.5s ease;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:focus 
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:focus
 {
     background-image: url(../photos/icon-search-focus.svg);
     background-color: var(--basic-white);
-    border: 1px solid white;
+    border: none;
     border-radius: 0px;
     color: var(--basic-black);
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:active 
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:active
 {
-    border: 1px solid white;
+    border: none;
     border-radius: 0px;
 }
 
