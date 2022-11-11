@@ -2,8 +2,39 @@
 {
     margin: 0 auto;
     font-style: normal;
+    background: var(--basic-white);
+}
+
+.main > div
+{
     display: flex;
     flex-flow: column;
 }
 
+.main > div > div
+{
+    display: flex;
+    flex-flow: column;
+}
 
+.main > div > div > div.main__wrapper--catalog--menu
+{
+    display: flex;
+    flex-flow: row;
+}
+
+.main > div > div > div.main__wrapper--catalog--perforator-section
+{
+    display: flex;
+    flex-flow: column;
+}
+
+.main > div > div > div.main__wrapper--catalog--perforator-section > div:nth-child(1)
+{
+    
+}
+
+.main > div > div > div.main__wrapper--catalog--perforator-section > div:nth-child(1) > h1
+{
+
+}
