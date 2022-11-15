@@ -225,7 +225,7 @@
     left: 0px;
     top: 0px;
 }
-/*
+
 @keyframes slide
 {
     10% {
@@ -236,7 +236,7 @@
         margin-left: calc(-805px * 1);
     }
 }
-*/
+
 .main > div > div:nth-child(2)
 {
     display: flex;
