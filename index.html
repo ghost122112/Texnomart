@@ -13,6 +13,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <script src="scripts/index.js" defer="true"></script>
+        <script src="scripts/links.js" defer="true"></script>
         <title class="title">texnomart:main</title>
     </head>
     <body class="body">
@@ -92,15 +93,27 @@
                         <div></div>
                     </div>
                     <div class="main__wrapper--intro-part--block-4">
-                        <div class="main__wrapper--intro-part--block-4--slider" id="slideshow">
-                            <div class="main__wrapper--intro-part--block-4--slide-wrapper">
-                                <div class="main__wrapper--intro-part--block-4--slide">
-                                    <a class="main__wrapper--intro-part--block-4--slide-catalog" href="">открыть каталог</a>
-                                </div>
-                                <div class="main__wrapper--intro-part--block-4--slide">
-                                    <a class="main__wrapper--intro-part--block-4--slide-catalog" href="">открыть каталог</a>
-                                </div>
+                        <div class="slideshow-container">
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 2</div>
+                                <img src="../photos/Дрели.svg" alt="dreli">
+                                <button class="switch-to-catalog" type="button" onclick="linkToCatalog()">Открыть каталог</button>
                             </div>
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 2</div>
+                                <img src="../photos/Перфораторы.svg" alt="perforatori">
+                                <button class="switch-to-catalog" type="button" onclick="linkToCatalog()">Открыть каталог</button>
+                            </div>
+                            <div>
+                                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                                <a class="next" onclick="plusSlides(1)">❯</a>
+                            </div>
+                        </div>
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span> 
+                            <span class="dot" onclick="currentSlide(2)"></span> 
                         </div>
                     </div>
                     <div class="main__wrapper--intro-part--block-5">
@@ -315,9 +328,9 @@
                         <p class="footer__wrapper--block-2--block-1--p">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
                     </div>
                     <div class="footer__wrapper--block-2--block-2">
-                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="" title="VK"></a>
-                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="" title="Facebook"></a>
-                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="" title="Instagram"></a>
+                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="https://www.vkontakte.ru" title="VK"></a>
+                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="https://www.facebook.com" title="Facebook"></a>
+                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="https://www.instagram.com" title="Instagram"></a>
                     </div>
                     <div class="footer__wrapper--block-2--block-3">
                         <div class="footer__wrapper--block-2--block-3--block-1">

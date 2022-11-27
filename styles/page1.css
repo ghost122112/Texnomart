@@ -93,6 +93,7 @@
 .main > div > div:nth-child(1) > div > div
 {
     background-repeat: no-repeat;
+    display: flex;
 }
 
 .main > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
@@ -156,76 +157,134 @@
     background-position: 8px 31px;
 }
 
-.main__wrapper--intro-part--block-4--slider
-{
-    overflow: hidden;
-    height: 266px;
-    width: 620px;
-    margin: 0 auto;
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
- 
-.main__wrapper--intro-part--block-4--slide 
-{
-    float: left;
-    height: 266px;
-    width: 620px;
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s ease;
 }
 
-.main__wrapper--intro-part--block-4--slide > a
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 23px;
-    top: 198px;
-    max-width: 192px;
-    min-height: 38px;
-    border: 1px solid var(--basic-red);
-    border-radius: 1px;
+.prev {
+    right: 612px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 37px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    color: rgb(224, 218, 218);
+}
+
+.switch-to-catalog {
+    position: absolute;
+    left: 24px;
+    top: 207px;
     background: var(--basic-red);
     color: var(--basic-white);
-    text-transform: uppercase;
+    border: none;
+    min-width: 192px;
+    min-height: 38px;
 }
 
-.main__wrapper--intro-part--block-4--slide > a:hover
+.switch-to-catalog:hover {
+    filter: opacity(0.9);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.switch-to-catalog:active {
+    filter: opacity(0.7);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+}
+  
+/* Number text (1/2) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    display: flex;
+    flex-flow: row;
+    z-index: 100;
+    position: relative;
+    left: -380px;
+    top: 237px;
+}
+  
+.active, .dot:hover {
+    background: red;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    position: relative;
+    left: -182px;
+    height: 266px;
+}
+
+.fade > img
 {
-    background: #CA2C37;
-    border: 1px solid #CA2C37;
-    transition: 0.3s ease;
+    position: relative;
+    left: 0;
+    top: 0;
 }
-
-.main__wrapper--intro-part--block-4--slide > a:active
-{
-    background: #BA2732;
-    border: 1px solid #BA2732;
-}
-
-.main__wrapper--intro-part--block-4--slide-wrapper
-{  
-    width: calc(620px * 2);
-    animation: slide 10s ease-in-out infinite;
-    margin-left: -182px;
-}
-
-.main__wrapper--intro-part--block-4--slide:nth-child(1)
-{
-    background-image: url(../photos/Перфораторы.svg);
-}
-
-.main__wrapper--intro-part--block-4--slide:nth-child(2)
-{
-    background-image: url(../photos/Дрели.svg);
-}
-
-@keyframes slide
-{
-    10% {
-        margin-left: -182px;
+  
+@keyframes fade {
+    from {
+        filter: opacity(0.4);
+    } 
+    to {
+        filter: opacity(1);
     }
-
-    50% {
-        margin-left: calc(-805px * 1);
+}
+  
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {
+        font-size: 11px
     }
 }
 

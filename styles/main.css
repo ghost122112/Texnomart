@@ -62,7 +62,6 @@
 .body a
 {
     text-decoration: none;
-    color: var(--basic-blue);
 }
 
 .header
@@ -268,7 +267,8 @@
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button:hover 
 {
     background: var(--success);
-    transition: 0.2s linear;
+    transition: 0.2s ease;
+    cursor: pointer;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button:active 
@@ -474,6 +474,7 @@
 {
     display: flex;
     min-height: 300px;
+    position: sticky;
 }
 
 footer > div 
