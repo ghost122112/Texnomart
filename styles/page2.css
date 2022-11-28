@@ -1,6 +1,7 @@
 .main
 {
     margin: 0 auto;
+    padding: 0;
     font-style: normal;
     background: var(--basic-white);
 }
@@ -9,6 +10,7 @@
 {
     display: flex;
     flex-flow: column;
+    padding: 0 calc(50% - 471px);
 }
 
 .main > div > div
