@@ -588,6 +588,9 @@ footer > div
     font-weight: 400;
     display: flex;
     padding: 0 calc(50% - 300px);
+    position: relative;
+    left: 0px;
+    top: 4px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > a
@@ -632,8 +635,8 @@ footer > div
     /* margin-bottom: 13px; */
     color: var(--basic-background);
     position: relative;
-    left: 0;
-    top: 0px;
+    left: 1px;
+    top: 2px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(2)
@@ -643,6 +646,7 @@ footer > div
     justify-content: center;
     align-items: center;
     width: 31%;
+    padding-top: 8px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(1),
@@ -693,7 +697,9 @@ footer > div
 .footer > div > div:nth-child(2) > div:nth-child(3) > div
 {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    gap: 50px;
+    padding: 14px 1px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(3) > div p
@@ -705,6 +711,23 @@ footer > div
     position: relative;
     left: 39px;
     top: 19px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 2px;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(3) > div p:nth-child(1)
+{
+    position: relative;
+    left: 38px;
+    top: 6px;
+}
+
+.footer > div > div:nth-child(2) > div:nth-child(3) > div p:nth-child(2)
+{
+    position: relative;
+    left: 32px;
+    top: 7px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(3) > div a

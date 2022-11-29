@@ -1,7 +1,5 @@
 .main 
 {
-    display: flex;
-    flex-flow: column;
     margin-top: -61px;
 }
 
@@ -714,6 +712,7 @@
 {
     display: flex;
     flex-flow: column;
+    padding-top: 42px;
 }
 
 .main > div > div:nth-child(4) > div:nth-child(1) > h2

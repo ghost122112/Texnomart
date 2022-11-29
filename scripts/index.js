@@ -15,8 +15,6 @@ function openCity(evt, blockOrder) {
     evt.currentTarget.className += " active";
 }
 
-
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
