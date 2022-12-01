@@ -1,5 +1,5 @@
 function openCity(evt, blockOrder) {
-    var i, tabcontent, tablinks;
+    let i, tabcontent, tablinks;
 
     tabcontent = document.getElementsByClassName("main__wrapper--section-3--content-table--tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
