@@ -18,11 +18,11 @@ function openCity(evt, blockOrder) {
 let slideIndex = 1;
 showSlides(slideIndex);
 
-function plusSlides(n) {
+const plusSlides = (n) => {
   showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
+const currentSlide = (n) => {
   showSlides(slideIndex = n);
 }
 
