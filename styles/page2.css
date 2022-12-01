@@ -33,10 +33,10 @@
 
 .main > div > div > div.main__wrapper--catalog--perforator-section > div:nth-child(1)
 {
-    
+    display: block;
 }
 
 .main > div > div > div.main__wrapper--catalog--perforator-section > div:nth-child(1) > h1
 {
-
+    display: block;
 }
