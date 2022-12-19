@@ -1,152 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head class="head">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/main.css">
-        <link rel="stylesheet" href="../styles/page2.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <title class="title">texnomart:catalog</title>
-    </head>
-    <body class="body">
-        <header class="header">
-            <div class="header__wrapper">
-                <nav class="header__wrapper--menu"> 
-                    <div class="header__wrapper--menu--logo-and-search-block">
-                        <a class="header__wrapper--menu--logo-and-search-block--logo-icon--link" href="../index.html" title="main page"></a>
-                        <form class="header__wrapper--menu--logo-and-search-block--search">
-                            <input class="header__wrapper--menu--logo-and-search-block--search--btn" type="text" name="search" title="Ищите" placeholder="Поиск">
-                        </form>
+<head class="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/page2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title class="title">texnomart:catalog</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__wrapper--menu"> 
+                <div class="header__wrapper--menu--logo-and-search-block">
+                    <a class="header__wrapper--menu--logo-and-search-block--logo-icon--link" href="../index.html" title="main page"></a>
+                    <form class="header__wrapper--menu--logo-and-search-block--search">
+                        <input class="header__wrapper--menu--logo-and-search-block--search--btn" type="text" name="search" title="Ищите" placeholder="Поиск">
+                    </form>
+                </div>
+                <div class="header__wrapper--sub-menus">
+                    <div class="header__wrapper--menu--bookmarks-korzina-order">
+                        <div class="header__wrapper--menu--bookmarks-korzina-order--bookmarks">
+                            <a class="header__wrapper--menu--bookmarks-korzina-order--bookmarks--link" href="#">Закладки: 0</a>
+                        </div>
+                        <div class="header__wrapper--menu--bookmarks-korzina-order--korzina">
+                            <a class="header__wrapper--menu--bookmarks-korzina-order--korzina--link" href="#">Корзина: 0</a>
+                        </div>
+                        <div class="header__wrapper--menu--bookmarks-korzina-order--order">
+                            <button class="header__wrapper--menu--bookmarks-korzina-order--btn" type="button">Оформить заказ</button>
+                        </div>
                     </div>
-                    <div class="header__wrapper--sub-menus">
-                        <div class="header__wrapper--menu--bookmarks-korzina-order">
-                            <div class="header__wrapper--menu--bookmarks-korzina-order--bookmarks">
-                                <a class="header__wrapper--menu--bookmarks-korzina-order--bookmarks--link" href="#">Закладки: 0</a>
+                </div>
+            </nav>
+            <nav class="header__wrapper--menu-2">
+                <div class="header__wrapper--menu-2--block-1">
+                    <p class="header__wrapper--menu-2--block-1--content-brief-description">Интернет-магазин строительных материалов инструментов для ремонта</p>
+                </div>
+                <div class="header__wrapper--menu-2--block-2">
+                    <div class="header__wrapper--menu-2--block-2--tel">
+                        <a class="header__wrapper--menu-2--block-2--tel--call-link" href="#" title="click to call">+7 (812) 555-05-55</a>
+                    </div>
+                    <div class="header__wrapper--menu-2--block-2--address">
+                        <p class="header__wrapper--menu-2--block-2--address-name">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                    </div>
+                </div>
+                <div class="header__wrapper--menu-2--block-3">
+                    <a class="header__wrapper--menu-2--block-3--login" href="#" title="login">Войти</a>
+                    <a class="header__wrapper--menu-2--block-3--register" href="#" title="register">Регистрация</a>
+                </div>
+            </nav>
+            <nav class="header__wrapper--menu-3">
+                <a class="header__wrapper--menu-3--links" href="../index.html" title="Главная">Главная</a>
+                <a class="header__wrapper--menu-3--links" href="#" title="Компания">Компания</a>
+                <a class="header__wrapper--menu-3--links" href="../other_pages/catalog.html" title="Каталог">Каталог</a>
+                <a class="header__wrapper--menu-3--links" href="#" title="Новости">Новости</a>
+                <a class="header__wrapper--menu-3--links" href="#" title="Спецпредложения">Спецпредложения</a>
+                <a class="header__wrapper--menu-3--links" href="#" title="Доставка">Доставка</a>
+                <a class="header__wrapper--menu-3--links" href="#" title="Контакты">Контакты</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main__wrapper">
+            <div class="main__wrapper--catalog">
+                <div class="main__wrapper--catalog--menu">
+                    <a class="main__wrapper--catalog--menu" href="../index.html" title="Главная"></a>
+                    <a class="main__wrapper--catalog--menu" href="../other_pages/catalog.html" title="Каталог">Каталог</a>
+                    <a class="main__wrapper--catalog--menu" href="#" title="Инструмент">Инструмент</a>
+                    <a class="main__wrapper--catalog--menu" href="#" title="Перфораторы">Перфораторы</a>
+                </div>
+                <div class="main__wrapper--catalog--title">
+                    <h1 class="main__wrapper--catalog--title--h1">Перфораторы</h1>
+                </div>
+                <div class="main__wrapper--catalog--costs-container">
+                    <div class="main__wrapper--catalog--costs-container--right-side-input">
+                        <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter">
+                            <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--title">
+                                <h2 class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--title--h2">Фильтр:</h2>
                             </div>
-                            <div class="header__wrapper--menu--bookmarks-korzina-order--korzina">
-                                <a class="header__wrapper--menu--bookmarks-korzina-order--korzina--link" href="#">Корзина: 0</a>
+                            <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--sub-title">
+                                <h2 class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--title--h3">Цена:</h2>
                             </div>
-                            <div class="header__wrapper--menu--bookmarks-korzina-order--order">
-                                <button class="header__wrapper--menu--bookmarks-korzina-order--btn" type="button">Оформить заказ</button>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-                <nav class="header__wrapper--menu-2">
-                    <div class="header__wrapper--menu-2--block-1">
-                        <p class="header__wrapper--menu-2--block-1--content-brief-description">Интернет-магазин строительных материалов инструментов для ремонта</p>
-                    </div>
-                    <div class="header__wrapper--menu-2--block-2">
-                        <div class="header__wrapper--menu-2--block-2--tel">
-                            <a class="header__wrapper--menu-2--block-2--tel--call-link" href="#" title="click to call">+7 (812) 555-05-55</a>
-                        </div>
-                        <div class="header__wrapper--menu-2--block-2--address">
-                            <p class="header__wrapper--menu-2--block-2--address-name">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                        </div>
-                    </div>
-                    <div class="header__wrapper--menu-2--block-3">
-                        <a class="header__wrapper--menu-2--block-3--login" href="#" title="login">Войти</a>
-                        <a class="header__wrapper--menu-2--block-3--register" href="#" title="register">Регистрация</a>
-                    </div>
-                </nav>
-                <nav class="header__wrapper--menu-3">
-                    <a class="header__wrapper--menu-3--links" href="../index.html" title="Главная">Главная</a>
-                    <a class="header__wrapper--menu-3--links" href="#" title="Компания">Компания</a>
-                    <a class="header__wrapper--menu-3--links" href="../other_pages/catalog.html" title="Каталог">Каталог</a>
-                    <a class="header__wrapper--menu-3--links" href="#" title="Новости">Новости</a>
-                    <a class="header__wrapper--menu-3--links" href="#" title="Спецпредложения">Спецпредложения</a>
-                    <a class="header__wrapper--menu-3--links" href="#" title="Доставка">Доставка</a>
-                    <a class="header__wrapper--menu-3--links" href="#" title="Контакты">Контакты</a>
-                </nav>
-            </div>
-        </header>
-        <main class="main">
-            <div class="main__wrapper">
-                <div class="main__wrapper--catalog">
-                    <div class="main__wrapper--catalog--menu">
-                        <a class="main__wrapper--catalog--menu" href="../index.html" title="Главная"></a>
-                        <a class="main__wrapper--catalog--menu" href="../other_pages/catalog.html" title="Каталог"></a>
-                        <a class="main__wrapper--catalog--menu" href="#" title="Инструмент"></a>
-                        <a class="main__wrapper--catalog--menu" href="#" title="Перфораторы"></a>
-                    </div>
-                    <div class="main__wrapper--catalog--perforator-section">
-                        <div class="main__wrapper--catalog--perforator-section--header">
-                            <h1 class="main__wrapper--catalog--perforator-section--header--title">Перфораторы</h1>
-                        </div>
-                        <div class="main__wrapper--catalog--perforator-section--body">
-                            <div class="main__wrapper--catalog--perforator-section--body--left-side-menu">
-                                <div class="main__wrapper--catalog--perforator-section--body--left-side-menu--header">
-                                    <h2 class="main__wrapper--catalog--perforator-section--body--left-side-menu--header--title">Фильтр:</h2>
+                            <div class="main__wraper--catalog--costs-container--right-side-input--cost-filter--interface">
+                                <input class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--range-btn" type="range" name="cost range " id="c_range">
+                                <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p">
+                                    <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--block-1" id="output">
+                                        0
+                                    </div>
+                                    <span class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--span">—</span>
+                                    <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--block-2" id="default">
+                                        30000
+                                    </div>
                                 </div>
-                                <label class="main__wrapper--catalog--perforator-section--body--left-side-menu--cost-count">Цена:</label>
-                                <div class="main__wrapper--catalog--perforator-section--body--left-side-menu--cost-counter">
-                                    <input class="main__wrapper--catalog--perforator-section--body--left-side-meny--cist-counter--input-btn" type="range" name="cost counter" id="cost" title="count">      
-                                </div>
                             </div>
-                            <div class="main__wrapper--catalog--perforator-section--body--right-side-display-content"></div>
+                        </div>
+                        <div class="main__wrapper--catalog--costs-container--right-side-input--produce-companies">
+                            <div class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--title">
+                                <h2 class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--title--h3">Производители:</h2>
+                            </div>
+                            <div class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list">
+                                <label for="bosch"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Bosch</label>
+                                <label for="interskol"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Интерскол</label>
+                                <label for="makita"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Makita</label>
+                                <label for="dewalt"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Dewalt</label>
+                                <label for="hitachi"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Hitachi</label>
+                            </div>
+                        </div>
+                        <div class="main__wrapper--catalog--costs-container--right-side-input--power">
+                            <div class="main__wrapper--catalog--costs-container--right-side-input--power--title">
+                                <h2 class="main__wrapper--catalog--costs-container--right-side-input--power--title--h3">Питание:</h2>
+                            </div>
+                            <div class="main__wrapper--catalog--costs-container--right-side-input--power--types-list">
+                                <label for="power-type-1"><input type="radio" name="power-type-1" id="power-type-1">Аккумуляторные</label>
+                                <label for="power-type-2"><input type="radio" name="power-type-2" id="power-type-2">Сетевые</label>
+                            </div>
+                        </div>
+                        <div class="main__wrapper--catalog--costs-container--right-side-input--show-section">
+                            <button class="main__wrapper--catalog--costs-container--right-side-input--show-section--btn" type="button" id="show">Показать</button>
+                        </div>
+                    </div>
+                    <div class="main__wrapper--catalog--costs-container--left-side-output">
+                        <div class="main__wrapper--catalog--costs-container--left-side-output--sort-nav">
+                            <label class="main__wrapper--catalog--costs-container--left-side-output--sort-nav--title" for="sort">Сортировка</label>
+                            <button class="main__wrapper--catalog--costs-container--left-side-output--sort-nav--btns-cost" type="button">По цене</button>
+                            <button class="main__wrapper--catalog--costs-container--left-side-output--sort-nav--btns-type" type="button">По типу</button>
+                            <button class="main__wrapper--catalog--costs-container--left-side-output--sort-nav--btns-functionality" type="button">По функционалу</button>
+                            <button class="main__wrapper--catalog--costs-container--left-side-output--sort-nav--btns-top" type="button"></button>
+                            <button class="main__wrapper--catalog--costs-container--left-side-output--sort-nav--btns-bottom" type="button"></button>
+                        </div>
+                        <div class="main__wrapper--catalog--costs-container--left-side-output--sort-result">
+                            * This section will contain the sorting results.
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__wrapper">
-                <div class="footer__wrapper--block-1">
-                    <div class="footer__wrapper--block-1--block-1">
-                        <div class="footer__wrapper--block-1--block-1--block-1">
-                            <a class="footer__wrapper--block-1--block-1--block-1--link-to-main-page" href="../index.html" title="main page"></a>
-                        </div>
-                        <div class="footer__wrapper--block-1--block-1--block-2">
-                            <a class="footer__wrapper--block-1--block-1--block-2--links" href="#" title="Компания">Компания</a>
-                            <a class="footer__wrapper--block-1--block-1--block-2--links" href="#" title="Новости">Новости</a>
-                            <a class="footer__wrapper--block-1--block-1--block-2--links" href="../other_pages/catalog.html" title="Каталог">Каталог</a>
-                            <a class="footer__wrapper--block-1--block-1--block-2--links" href="#" title="Доставка">Доставка</a>
-                            <a class="footer__wrapper--block-1--block-1--block-2--links" href="#" title="Контакты">Контакты</a>
-                        </div> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper--block-1">
+                <div class="footer__wrapper--block-1--block-1">
+                    <div class="footer__wrapper--block-1--block-1--block-1">
+                        <a class="footer__wrapper--block-1--block-1--block-1--link-to-main-page" href="index.html" tabindex="1" title="main page"></a>
                     </div>
-                    <div class="footer__wrapper--block-1--block-2">
-                        <div class="footer__wrapper--block-1--block-2--block-1">
-                            <p class="footer__wrapper--block-1--block-2--block-1--location-address">
-                                г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
-                            </p>
-                        </div>
-                        <div class="footer__wrapper--block-1--block-2--block-2">
-                            <a class="footer__wrapper--block-1--block-2--block-2" href="#" title="Материалы">Материалы</a>
-                            <a class="footer__wrapper--block-1--block-2--block-2" href="#" title="Техника">Техника</a>
-                            <a class="footer__wrapper--block-1--block-2--block-2" href="#" title="Инструмент">Инструмент</a>
-                            <a class="footer__wrapper--block-1--block-2--block-2" href="#" title="Спецпредложения">Спецпредложения</a>
-                        </div>
-                    </div>
+                    <div class="footer__wrapper--block-1--block-1--block-2">
+                        <a class="footer__wrapper--block-1--block-1--block-2--links" tabindex="1" href="#" title="Компания">Компания</a>
+                        <a class="footer__wrapper--block-1--block-1--block-2--links" tabindex="1" href="#" title="Новости">Новости</a>
+                        <a class="footer__wrapper--block-1--block-1--block-2--links" tabindex="1" href="other_pages/catalog.html" title="Каталог">Каталог</a>
+                        <a class="footer__wrapper--block-1--block-1--block-2--links" tabindex="1" href="#" title="Доставка">Доставка</a>
+                        <a class="footer__wrapper--block-1--block-1--block-2--links" tabindex="1" href="#" title="Контакты">Контакты</a>
+                    </div> 
                 </div>
-                <div class="footer__wrapper--block-2">
-                    <div class="footer__wrapper--block-2--block-1">
-                        <p class="footer__wrapper--block-2--block-1--p">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+                <div class="footer__wrapper--block-1--block-2">
+                    <div class="footer__wrapper--block-1--block-2--block-1">
+                        <p class="footer__wrapper--block-1--block-2--block-1--location-address">
+                            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55
+                        </p>
                     </div>
-                    <div class="footer__wrapper--block-2--block-2">
-                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="https://www.vkontakte.ru" title="VK"></a>
-                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="https://www.facebook.com" title="Facebook"></a>
-                        <a class="footer__wrapper--block-2--block-2--links-to-social-medias" href="https://www.instagram.com" title="Instagram"></a>
-                    </div>
-                    <div class="footer__wrapper--block-2--block-3">
-                        <div class="footer__wrapper--block-2--block-3--block-1">
-                            <p class="footer__wrapper--block-2--block-3--block-1--p">Обратная связь:
-                                <a class="footer__wrapper--block-2--block-3--block-1--p--sub-link-to-htmlacademy-mail" href="#" title="email htmlacademy">main@htmlacademy.ru</a>
-                            </p>
-                        </div>
-                        <div class="footer__wrapper--block-2--block-3--block-2">
-                            <p class="footer__wrapper--block-2--block-3--block-2--p">Разработано —
-                                <a class="footer__wrapper--block-2--block-3--block-2--p--link-to-htmlacademy" href="#" title="htmlacademy">htmlacademy.ru</a>
-                            <p>
-                        </div>
+                    <div class="footer__wrapper--block-1--block-2--block-2">
+                        <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Материалы">Материалы</a><!--review this section, css bug-->
+                        <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Техника">Техника</a>
+                        <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Инструмент">Инструмент</a>
+                        <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Спецпредложения">Спецпредложения</a>
                     </div>
                 </div>
             </div>
-        </footer>
-    </body>
+            <div class="footer__wrapper--block-2">
+                <div class="footer__wrapper--block-2--block-1">
+                    <p class="footer__wrapper--block-2--block-1--p">© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+                </div>
+                <div class="footer__wrapper--block-2--block-2">
+                    <a class="footer__wrapper--block-2--block-2--links-to-social-medias" tabindex="1" href="https://www.vkontakte.ru" title="VK"></a>
+                    <a class="footer__wrapper--block-2--block-2--links-to-social-medias" tabindex="1" href="https://www.facebook.com" title="Facebook"></a>
+                    <a class="footer__wrapper--block-2--block-2--links-to-social-medias" tabindex="1" href="https://www.instagram.com" title="Instagram"></a>
+                </div>
+                <div class="footer__wrapper--block-2--block-3">
+                    <div class="footer__wrapper--block-2--block-3--block-1">
+                        <p class="footer__wrapper--block-2--block-3--block-1--p">Обратная связь:
+                            <a class="footer__wrapper--block-2--block-3--block-1--p--sub-link-to-htmlacademy-mail" href="#" tabindex="1" title="email htmlacademy">main@htmlacademy.ru</a>
+                        </p>
+                        <p class="footer__wrapper--block-2--block-3--block-1--p">Разработано —
+                            <a class="footer__wrapper--block-2--block-3--block-1--p--link-to-htmlacademy" href="#" tabindex="1" title="htmlacademy">htmlacademy.ru</a>
+                        <p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

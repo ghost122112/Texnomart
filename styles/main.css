@@ -530,6 +530,7 @@ footer > div
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)
 {
     display: flex;
+    flex-flow: row;
     float: right;
     min-height: 68px;
     gap: 58px;
@@ -560,6 +561,7 @@ footer > div
 .footer > div > div:nth-child(1) > div:nth-child(2)
 {
     display: flex;
+    flex-flow: row;
     min-height: 122px;
     gap: 89px;
 }
@@ -574,6 +576,7 @@ footer > div
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(2)
 {
     display: flex;
+    flex-flow: row;
     float: right;
     min-height: 122px;
     gap: 57px;
@@ -624,7 +627,7 @@ footer > div
 
 .footer > div > div:nth-child(2) > div:nth-child(1)
 {
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     display: flex;
     width: 33%;
@@ -635,7 +638,7 @@ footer > div
     /* margin-bottom: 13px; */
     color: var(--basic-background);
     position: relative;
-    left: 1px;
+    left: -40px;
     top: 2px;
 }
 
