@@ -153,7 +153,7 @@
     background-color: var(--header-menu-1-background);
     padding: 12px 20px 12px 40px;
     background-image: url(../photos/icon-search.svg);
-    background-position: 12px 12px;
+    background-position: 16px 12px;
     background-repeat: no-repeat;
 }
 
@@ -248,7 +248,6 @@
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover 
 {
     background-image: url(../photos/icon-cart-on-hover.svg);
-    background-position: 38px 13px;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button 
