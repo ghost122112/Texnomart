@@ -248,6 +248,7 @@
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover 
 {
     background-image: url(../photos/icon-cart-on-hover.svg);
+    background-position: 38px 13px;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button 
@@ -278,8 +279,6 @@
 }
 
 /* second menu's style */
-
-
 
 .header > div > nav:nth-child(2) 
 {

@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="/scripts/slider.js" defer="true"></script>
     <title class="title">texnomart:catalog</title>
 </head>
 <body class="body">
@@ -88,7 +89,9 @@
                                 <h2 class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--title--h3">Цена:</h2>
                             </div>
                             <div class="main__wraper--catalog--costs-container--right-side-input--cost-filter--interface">
-                                <input class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--range-btn" type="range" name="cost range" title="specify cost range" id="c_range">
+                                <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--block">
+                                    <input class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--block--range-btn" type="range" name="cost range" title="specify cost range" id="c_range" min="0" max="30000">
+                                </div>
                                 <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p">
                                     <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--block-1" id="output">
                                         0
@@ -105,11 +108,31 @@
                                 <h2 class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--title--h3">Производители:</h2>
                             </div>
                             <div class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list">
-                                <label for="bosch"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Bosch</label>
-                                <label for="interskol"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Интерскол</label>
-                                <label for="makita"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Makita</label>
-                                <label for="dewalt"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Dewalt</label>
-                                <label for="hitachi"><input class="main__wrapper--catalog--costs-container--right-side-input--produce-companies--list--checks" type="checkbox">Hitachi</label>
+                                <label class="container">
+                                    <input class="checkbox" type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Bosch
+                                </label>
+                                <label class="container">
+                                    <input class="checkbox" type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Интерскол
+                                </label>
+                                <label class="container">
+                                    <input class="checkbox" type="checkbox" checked>
+                                    <span class="checkmark"></span>
+                                    Makita
+                                </label>
+                                <label class="container">
+                                    <input class="checkbox" type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Dewalt
+                                </label>
+                                <label class="container">
+                                    <input class="checkbox" type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Hitachi
+                                </label>
                             </div>
                         </div>
                         <div class="main__wrapper--catalog--costs-container--right-side-input--power">
@@ -117,12 +140,20 @@
                                 <h2 class="main__wrapper--catalog--costs-container--right-side-input--power--title--h3">Питание:</h2>
                             </div>
                             <div class="main__wrapper--catalog--costs-container--right-side-input--power--types-list">
-                                <label for="power-type-1"><input type="radio" name="power-type-1" id="power-type-1">Аккумуляторные</label>
-                                <label for="power-type-2"><input type="radio" name="power-type-2" id="power-type-2">Сетевые</label>
+                                <label class="main__wrapper--catalog--costs-container--right-side-input--power--types-list--label">
+                                    <input type="radio" name="radio">
+                                    <span class="radio-checkmark"></span>
+                                    Аккумуляторные
+                                </label>
+                                <label class="main__wrapper--catalog--costs-container--right-side-input--power--types-list--label">
+                                    <input type="radio" name="radio">
+                                    <span class="radio-checkmark"></span>
+                                    Сетевые
+                                </label>
                             </div>
                         </div>
                         <div class="main__wrapper--catalog--costs-container--right-side-input--show-section">
-                            <button class="main__wrapper--catalog--costs-container--right-side-input--show-section--btn" type="button" id="show">Показать</button>
+                            <button class="main__wrapper--catalog--costs-container--right-side-input--show-section--btn" type="submit" id="show">Показать</button>
                         </div>
                     </div>
                     <div class="main__wrapper--catalog--costs-container--left-side-output">
