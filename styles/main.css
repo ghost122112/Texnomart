@@ -218,7 +218,7 @@
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    background-position: 23px 13px;
+    background-position: 24px 13px;
     padding: 2px 0px 0px 28px;
     color: var(--basic-white);
 }
@@ -231,6 +231,7 @@
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a 
 {
     background-image: url(../photos/icon-cart.svg);
+    background-position: 29px 12px;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a:hover,

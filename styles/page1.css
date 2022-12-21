@@ -48,18 +48,32 @@
     font-size: 24px;
     line-height: 30px;
     position: relative;
-    left: -3px;
-    top: -3px;
+    left: 0px;
+    top: 22px;
+    padding: 0;
+    margin: 0;
 }
 
 .main > div > div:nth-child(1) > div > div:nth-child(1) > a
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    left: -2px;
+    top: 44px;
+    text-align: center;
+}
+
+.main > div > div:nth-child(1) > div > div:nth-child(1) > span
 {
     display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: black;
     min-width: 135px;
     min-height: 38px;
     background: white;
@@ -67,11 +81,10 @@
     filter: opacity(0.3);
     position: relative;
     left: -2px;
-    top: -14px;
+    top: 15px;
     padding: 0px 0px 0px 0px;
     text-align: center;
     justify-content: center;
-    align-items: center;
 }
 
 .main > div > div:nth-child(1) > div > div:nth-child(2)
@@ -177,11 +190,20 @@
 
 .prev {
     right: 612px;
-    background-image: url(../photos/Layer\ 119.svg);
+    width: 22px;
+    height: 40px;
+    background-image: url(/photos/icon-left.svg);
+    background-repeat: no-repeat;
+    background-position: 33px 10px;
 }
 
 .next {
     right: 37px;
+    width: 22px;
+    height: 40px;
+    background-image: url(/photos/icon-right.svg);
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
 }
 
 .prev:hover, .next:hover {
@@ -191,12 +213,17 @@
 .switch-to-catalog {
     position: absolute;
     left: 24px;
-    top: 207px;
+    top: 200px;
     background: var(--basic-red);
     color: var(--basic-white);
     border: none;
     min-width: 192px;
     min-height: 38px;
+    text-transform: uppercase;
+    font-family: 'Cuprum';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .switch-to-catalog:hover {
@@ -241,8 +268,8 @@
     flex-flow: row;
     z-index: 100;
     position: relative;
-    left: -380px;
-    top: 237px;
+    left: -365px;
+    top: 218px;
 }
   
 .active, .dot:hover {
