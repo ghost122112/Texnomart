@@ -748,14 +748,5 @@ footer > div
     filter: opacity(0.5);
 }
 
-@media screen and (max-width: 1040px)
-{
-    .footer > div > div:nth-child(1) > div:nth-child(1)
-    {
-        padding:  0 calc(50% - 440px);
-    }
-    .footer > div > div:nth-child(1) > div:nth-child(2)
-    {
-        padding: 0 calc(50% - 440px);
-    }
-}
+
+
