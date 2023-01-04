@@ -7,17 +7,17 @@ slider.oninput = function() {
 }
 
 
-const rangeInputs = document.querySelectorAll('input[type="range"]');
-const numberInput = document.querySelector('input[type="number"]');
+let rangeInputs = document.querySelectorAll('input[type="range"]');
+let numberInput = document.querySelector('input[type="number"]');
 
 const handleInputChange = (e) => {
   let target = e.target;
   if (e.target.type !== 'range') {
     target = document.getElementById('range');
   } 
-  const min = target.min;
-  const max = target.max;
-  const val = target.value;
+  let min = target.min;
+  let max = target.max;
+  let val = target.value;
   
   target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%';
 }
