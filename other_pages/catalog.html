@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script src="/scripts/slider.js" defer="true"></script>
+    <script src="/scripts/slider_logic.js" defer="true"></script>
     <title class="title">texnomart:catalog</title>
 </head>
 <body class="body">
@@ -90,11 +91,11 @@
                         </div>
                         <div class="main__wraper--catalog--costs-container--right-side-input--cost-filter--interface">
                             <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--block">
-                                <input class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--block--range-btn" tabindex="1" type="range" name="cost range" title="specify cost range" id="c_range" min="0" max="30000">
+                                <input class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--block--range-btn" tabindex="1" type="range" min="1" max="30000" value="15000" id="cost-range">
                             </div>
                             <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p">
-                                <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--block-1" id="output">
-                                    0
+                                <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--block-1">
+                                    <span id="output"></span>
                                 </div>
                                 <span class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--span">—</span>
                                 <div class="main__wrapper--catalog--costs-container--right-side-input--cost-filter--interface--i-p--block-2" id="default">
@@ -316,7 +317,7 @@
                     </p>
                 </div>
                 <div class="footer__wrapper--block-1--block-2--block-2">
-                    <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Материалы">Материалы</a><!--review this section, css bug-->
+                    <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Материалы">Материалы</a>
                     <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Техника">Техника</a>
                     <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Инструмент">Инструмент</a>
                     <a class="footer__wrapper--block-1--block-2--block-2" tabindex="1" href="#" title="Спецпредложения">Спецпредложения</a>
