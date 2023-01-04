@@ -32,4 +32,3 @@ rangeInputs.forEach(input => {
 numberInput.addEventListener('input', handleInputChange);
 
 
-
