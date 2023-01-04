@@ -29,8 +29,3 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-const cost_range_function = () => {
-  let x = document.getElementById("c_range").ariaValueMax;
-  document.getElementById("").innerHTML;
-  return x;
-}
