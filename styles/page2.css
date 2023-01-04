@@ -224,7 +224,7 @@ input[type="range"] {
     height: 2px;
     background: #D7DCDE;
     border-radius: 5px;
-    background-image: linear-gradient(#ff4500, #ff4500);
+    background-image: linear-gradient(rgb(26, 177, 26), rgb(26, 177, 26));
     background-repeat: no-repeat;
     background-size: 50% 100%;
 }
@@ -444,7 +444,15 @@ div.main__wrapper--catalog--costs-container--right-side-input--produce-companies
     width: 26px;
     height: 23px;
 }
+
+.container input:hover ~ .checkmark {
+    filter: opacity(1);
+}
   
+.container input:active ~ .checkmark {
+    filter: opacity(0.3);
+}
+
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
     content: "";
@@ -526,6 +534,13 @@ div.main__wrapper--catalog--costs-container--right-side-input--power > div:nth-c
 .main__wrapper--catalog--costs-container--right-side-input--power--types-list--label:hover input ~ .radio-checkmark
 {
     filter: opacity(1);
+}
+
+.main > div > div > div > div:nth-child(1) >
+div.main__wrapper--catalog--costs-container--right-side-input--power > div:nth-child(2) >
+.main__wrapper--catalog--costs-container--right-side-input--power--types-list--label:active input ~ .radio-checkmark
+{
+    filter: opacity(0.3);
 }
 
 /* when the radio button is checked, add a blue background */
