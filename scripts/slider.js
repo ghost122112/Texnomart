@@ -1,3 +1,13 @@
+let slider = document.getElementById("cost-range");
+let output = document.getElementById("output");
+
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+
 const rangeInputs = document.querySelectorAll('input[type="range"]');
 const numberInput = document.querySelector('input[type="number"]');
 
