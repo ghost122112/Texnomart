@@ -1,3 +1,5 @@
+// script for showing the current value of slider in input range button
+
 let slider = document.getElementById("cost-range");
 let output = document.getElementById("output");
 output.innerHTML = slider.value;
