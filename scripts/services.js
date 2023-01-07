@@ -1,3 +1,5 @@
+// script to show services
+
 const openCity = (evt, blockOrder) => {
   let i, tabcontent, tablinks;
 

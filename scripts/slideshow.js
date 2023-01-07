@@ -1,3 +1,5 @@
+// script to show slideshow
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
