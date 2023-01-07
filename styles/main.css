@@ -342,7 +342,7 @@
     background: #F3F7F9;
     color: var(--basic-red);
     border: 3px solid var(--basic-white);
-    width: 270px;
+    width: 241px;
     height: 42px;
     margin: 0 auto;
     display: flex;
@@ -354,7 +354,7 @@
     line-height: 30px;
     background-image: url(../photos/icon-phone.svg);
     background-repeat: no-repeat;
-    background-position: 51px 12px;
+    background-position: 36px 12px;
     padding: 0px 0px 0px 25px;
 }
 
