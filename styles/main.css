@@ -260,8 +260,8 @@
 .header > div > nav:nth-child(2) {
     display: flex;
     flex-flow: row;
-    overflow-x: auto;
     min-height: 154px;
+    flex-wrap: wrap;
 }
 
 .header > div > nav:nth-child(2) > div {
@@ -418,7 +418,7 @@
     display: flex;
     flex-flow: row;
     align-items: center;
-    overflow-x: auto;
+    flex-wrap: wrap;
 }
 
 .header > div > nav:nth-child(3) > a 
@@ -489,7 +489,7 @@ footer > div
 .footer > div > div:nth-child(1) > div:nth-child(1)
 {
     display: flex;
-    gap: 173px;
+    column-gap: 173px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
@@ -507,7 +507,7 @@ footer > div
     background-image: url(../photos/logo-technomart.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 63%; 
+    background-size: 63%;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > a:hover
@@ -521,11 +521,11 @@ footer > div
     flex-flow: row;
     float: right;
     min-height: 68px;
-    gap: 58px;
-    overflow-x: auto;
+    column-gap: 57px;
     position: relative;
     left: 0px;
     top: 2px;
+    flex-wrap: wrap;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a
@@ -554,7 +554,7 @@ footer > div
     display: flex;
     flex-flow: row;
     min-height: 122px;
-    gap: 89px;
+    column-gap: 89px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)
@@ -570,11 +570,12 @@ footer > div
     flex-flow: row;
     float: right;
     min-height: 122px;
-    gap: 57px;
+    column-gap: 57px;
     overflow-x: hidden;
     position: relative;
     left: 1px;
     top: 2px;
+    flex-wrap: wrap;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p
@@ -617,6 +618,7 @@ footer > div
     min-height: 107px;
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(1)
@@ -644,6 +646,7 @@ footer > div
     align-items: center;
     width: 31%;
     padding-top: 8px;
+    column-gap: 1px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(2) > a:nth-child(1),
@@ -695,8 +698,8 @@ footer > div
 {
     display: flex;
     flex-flow: row;
-    gap: 50px;
-    padding: 14px 1px;
+    column-gap: 50px;
+    padding: 14px 1px 0px 0px;
 }
 
 .footer > div > div:nth-child(2) > div:nth-child(3) > div p
