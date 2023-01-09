@@ -479,6 +479,9 @@
     align-items: center;
     text-align: center;
     padding: 0 calc(50% - 82px);
+    position: relative;
+    left: 0px;
+    top: 2px;
 }
 
 .main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > p:nth-child(2)
@@ -508,7 +511,7 @@
     align-items: center;
     position: relative;
     left: -2px;
-    top: -13px;
+    top: -12px;
 }
 
 .main > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(3) > div::after
