@@ -49,8 +49,7 @@
     --footer-background-color-2: #293449;
 }
 
-.body
-{
+.body {
     margin: 0 auto;
     background: var(--basic-white);
     color: var(--basic-black);
@@ -59,20 +58,17 @@
     font-weight: 400;
 }
 
-.body a
-{
+.body a {
     text-decoration: none;
 }
 
-.header
-{
+.header {
     display: flex;
     background: rgba(0, 0, 0, 0.04);
     min-height: 320px;
 }
 
-.header > div
-{
+.header > div {
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -80,16 +76,14 @@
 
 .header > div > nav:nth-child(1),
 .header > div > nav:nth-child(2),
-.header > div > nav:nth-child(3)
-{
+.header > div > nav:nth-child(3) {
     padding: 0 calc(50% - 471px);
     align-items: center;
 }
 
 /* first menu's style */
 
-.header > div > nav:nth-child(1)
-{
+.header > div > nav:nth-child(1) {
     display: flex;
     flex-flow: row;
     height: 42px;
@@ -97,20 +91,17 @@
     border-bottom: 4px solid var(--basic-background);
 }
 
-.header > div > nav:nth-child(1) > div
-{
+.header > div > nav:nth-child(1) > div {
     display: flex;
     flex-flow: row;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) 
-{
+.header > div > nav:nth-child(1) > div:nth-child(1)  {
     float: left;
     align-items: center;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > a 
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > a {
     border: 1px solid var(--basic-red);
     background: var(--basic-red);
     background-image: url(../photos/logo-technomart.svg);
@@ -121,27 +112,23 @@
     border-bottom: 6px solid #BA2732;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > a:hover 
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > a:hover  {
     filter: opacity(0.9);
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > a:active 
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > a:active  {
     background: var(--error);
     background-image: url(../photos/logo-technomart.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form 
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > form  {
     display: flex;
     align-items: center;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text] 
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]  {
     all: unset;
     width: 267px;
     height: 42px;
@@ -157,14 +144,12 @@
     background-repeat: no-repeat;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:hover
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:hover {
     background-image: url(../photos/icon-search-active.svg);
     transition: 0.5s ease;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:focus
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:focus {
     background-image: url(../photos/icon-search-focus.svg);
     background-color: var(--basic-white);
     border: none;
@@ -172,26 +157,22 @@
     color: var(--basic-black);
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:active
-{
+.header > div > nav:nth-child(1) > div:nth-child(1) > form > input[type=text]:active {
     border: none;
     border-radius: 0px;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2)  {
     float: right;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div  {
     display: flex;
     flex-flow: row;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1),
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2)  {
     font-size: 18px;
     line-height: 24px;
     position: relative;
@@ -200,8 +181,7 @@
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1),
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2),
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3)  {
     display: flex;
     align-items: center;
     width: 150px;
@@ -210,8 +190,7 @@
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a,
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a  {
     height: 39px;
     width: 100%;
     display: flex;
@@ -223,31 +202,26 @@
     color: var(--basic-white);
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a  {
     background-image: url(../photos/icon-bookmark.svg);
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a  {
     background-image: url(../photos/icon-cart.svg);
     background-position: 29px 12px;
 }
 
 .header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a:hover,
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover  {
     background-color: var(--header-links-back-color-on-active);
     transition: 0.5s ease;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a:hover 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(1) > a:hover  {
     background-image: url(../photos/icon-bookmark-on-hover.svg);
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(2) > a:hover  {
     background-image: url(../photos/icon-cart-on-hover.svg);
 }
 
@@ -257,8 +231,7 @@
     top: 0px;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button {
     width: 150px;
     height: 42px;
     background: var(--basic-green);
@@ -271,42 +244,36 @@
     top: 0px;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button:hover 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button:hover {
     background: var(--success);
     transition: 0.2s ease;
     cursor: pointer;
 }
 
-.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button:active 
-{
+.header > div > nav:nth-child(1) > div:nth-child(2) > div > div:nth-child(3) > button:active {
     color: rgba(255, 255, 255, 0.5);
     background: var(--basic-green);
 }
 
 /* second menu's style */
 
-.header > div > nav:nth-child(2) 
-{
+.header > div > nav:nth-child(2) {
     display: flex;
     flex-flow: row;
     overflow-x: auto;
     min-height: 154px;
 }
 
-.header > div > nav:nth-child(2) > div 
-{
+.header > div > nav:nth-child(2) > div {
     display: flex;
     flex-flow: row;
 }
 
-.header > div > nav:nth-child(2) > div:nth-child(1) 
-{
+.header > div > nav:nth-child(2) > div:nth-child(1) {
     width: 27%;
 }
 
-.header > div > nav:nth-child(2) > div:nth-child(1) > p 
-{
+.header > div > nav:nth-child(2) > div:nth-child(1) > p {
     padding: 0 calc(50% - 94px);
     font-style: italic;
     font-size: 16px;
@@ -317,8 +284,7 @@
     top: -3px;
 }
 
-.header > div > nav:nth-child(2) > div:nth-child(2) a 
-{
+.header > div > nav:nth-child(2) > div:nth-child(2) a {
     color: var(--basic-blue);
 }
 
@@ -557,6 +523,9 @@ footer > div
     min-height: 68px;
     gap: 58px;
     overflow-x: auto;
+    position: relative;
+    left: 0px;
+    top: 2px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > a
@@ -602,7 +571,10 @@ footer > div
     float: right;
     min-height: 122px;
     gap: 57px;
-    overflow-x: auto;
+    overflow-x: hidden;
+    position: relative;
+    left: 1px;
+    top: 2px;
 }
 
 .footer > div > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > p
@@ -614,7 +586,7 @@ footer > div
     display: flex;
     padding: 0 calc(50% - 300px);
     position: relative;
-    left: 0px;
+    left: 1px;
     top: 4px;
 }
 
@@ -751,7 +723,7 @@ footer > div
 .footer > div > div:nth-child(2) > div:nth-child(3) > div p:nth-child(2)
 {
     position: relative;
-    left: 32px;
+    left: 37px;
     top: 7px;
 }
 
